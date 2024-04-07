@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Timer</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">TIMER</div>
+        <div class="timer" id="work-timer">
+            <div class="time-display" id="time-display">25:00</div>
+            <div class="buttons">
+                <button onclick="startTimer('work')">Start</button>
+                <button onclick="stopTimer()">Stop</button>
+                <button onclick="resetTimer('work')">Reset</button>
+            </div>
+        </div>
+        <div class="timer" id="short-break-timer" style="display:none;">
+            <div class="time-display" id="short-break-display">05:00</div>
+            <div class="buttons">
+                <button onclick="startTimer('short-break')">Start</button>
+                <button onclick="stopTimer()">Stop</button>
+                <button onclick="resetTimer('short-break')">Reset</button>
+            </div>
+        </div>
+        <div class="timer" id="long-break-timer" style="display:none;">
+            <div class="time-display" id="long-break-display">15:00</div>
+            <div class="buttons">
+                <button onclick="startTimer('long-break')">Start </button>
+                <button onclick="stopTimer()">Stop</button>
+                <button onclick="resetTimer('long-break')">Reset</button>
+            </div>
+        </div>
+        <div class="toggle-buttons">
+            <button onclick="toggleTimer('work')">Pomodoro Timer</button>
+            <button onclick="toggleTimer('short-break')">Short Break</button>
+            <button onclick="toggleTimer('long-break')">Long Break</button>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
